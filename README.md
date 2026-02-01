@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gauge
 
-## Getting Started
+##### A study in minimal, premium e-commerce design.
 
-First, run the development server:
+**Gauge** is a curated tech store built to demonstrate how **high-end** physical product aesthetics can be translated into a digital interface. It prioritizes white space, intentional typography, and tactile interactions to create a "hardware-store" feel for software.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🎯 Project Goals
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Design-Led Engineering**: Implementing a "Soft UI" system that mimics physical materials.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Frictionless UX**: A focused user journey that removes the clutter common in traditional e-commerce.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Performance as a Feature**: Ensuring that premium visuals don't come at the cost of speed.* 
 
-## Learn More
+### 🛠 The Approach
 
-To learn more about Next.js, take a look at the following resources:
+###### The project is built using a modern, scalable stack focused on maintainability and SEO.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Next.js / React:** For a snappy, app-like experience with server-side reliability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Tailwind CSS**: To build a consistent, reusable design system from the ground up.
 
-## Deploy on Vercel
+* **Framer Motion**: Powering subtle, intentional micro-interactions that provide user feedback.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🧩 Core Focus
+###### Instead of a "feature-heavy" approach, Gauge focuses on Digital Craftsmanship:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Custom Shadow Engine**: A unified system for depth and extrusion.
+
+* **Refined Typography**: Leveraging a clean hierarchy to guide the user's eye.
+
+* **Responsive Precision**: A layout that remains "premium" across all device scales.
