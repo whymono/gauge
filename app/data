@@ -1,0 +1,11 @@
+export const products = [
+    { id: 1, name: "Gauge 65", price: "$299", image: "/products/gauge-65.png", category: "Keyboards", description: "A heavy-duty 65% mechanical keyboard with a solid aluminum chassis and gasket mounting." },
+    { id: 2, name: "Poly 60", price: "$189", image: "/products/poly-60.png", category: "Keyboards", description: "Frosted polycarbonate casing for a diffused RGB underglow and a softer typing feel." },
+    { id: 3, name: "Macro Pad", price: "$89", image: "/products/macro-pad.png", category: "Keyboards", description: "Programmable 6-key macro pad for designers and developers." },
+    { id: 4, name: "Air Wireless", price: "$99", image: "/products/air-mouse.png", category: "Mice", description: "Ultralight wireless mouse with a 4k polling rate sensor." },
+    { id: 5, name: "Ergo Lift", price: "$119", image: "/products/ergo-mouse.png", category: "Mice", description: "Vertical ergonomic mouse designed to reduce wrist strain." },
+    { id: 6, name: "Slate Mat", price: "$45", image: "/products/desk-mat.png", category: "Mice", description: "Premium wool felt desk mat for a warm, acoustic-dampening surface." },
+    { id: 7, name: "Studio Open", price: "$349", image: "/products/headphones.png", category: "Audio", description: "Open-back reference headphones for critical listening." },
+    { id: 8, name: "Beam Bar", price: "$129", image: "/products/soundbar.png", category: "Audio", description: "Compact soundbar that fits perfectly under your monitor." },
+    { id: 9, name: "Core Buds", price: "$149", image: "/products/earbuds.png", category: "Audio", description: "Transparent casing wireless earbuds with active noise cancellation." },
+];
