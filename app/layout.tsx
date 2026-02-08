@@ -1,22 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import CartSidebar from "./components/CartSidebar";
 
 export const metadata: Metadata = {
     title: "Gauge",
     description: "Minimalist Tech Store",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
         <body>
         <Navbar />
-        {/* CHANGED: Removed max-w-7xl and padding. Now it's just full width. */}
+        <CartSidebar />  {/* <--- Add this line here */}
         <main className="w-full min-h-screen bg-white">
             {children}
         </main>
