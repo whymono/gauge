@@ -13,22 +13,23 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ c
 
     return (
         <div>
-            {/* HERO SECTION: Full Width (Edge to Edge) */}
+            {/* HERO SECTION - This was likely where the error was */}
             <div className="relative w-full h-[600px]">
                 <Image
-                    src="/Hero_Img.png"
+                    src="/Hero_Img.png" // Fixed: This must remain static
                     alt="Background image"
                     fill
-                    className="object-cover" // Removed rounded corners to keep it clean
+                    className="object-cover"
                     priority
                 />
                 <Botbar />
             </div>
 
-            {/* PRODUCT GRID: Constrained Width */}
+            {/* CONTENT */}
             <div className="max-w-7xl mx-auto px-6 py-16 space-y-24">
+
                 <section className="flex justify-between items-end">
-                    <h2 className="text-4xl font-light tracking-tight text-gray-900 max-w-md">
+                    <h2 className="text-4xl font-light tracking-tight text-gray-900 max-w-md block">
                         {category ? `${category} Collection` : "Curated essentials for the modern workspace."}
                     </h2>
                     <Link href="/" className="text-sm font-medium underline underline-offset-4 hover:text-gray-600 transition-colors">
@@ -36,12 +37,13 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ c
                     </Link>
                 </section>
 
-                <section className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 pb-24">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 pb-24">
                     {filteredProducts.map((product) => (
-                        <Link href={`/product/${product.id}`} key={product.id} className="group cursor-pointer">
+                        <Link href={`/product/${product.id}`} key={product.id} className="group cursor-pointer block">
                             <div className="relative aspect-square bg-gray-100 rounded-3xl overflow-hidden mb-4">
                                 <Image
-                                    src={product.image}
+                                    // THIS is where the fix belongs (inside the loop)
+                                    src={product.images?.[0] || "/placeholder.png"}
                                     alt={product.name}
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -59,7 +61,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ c
                             </div>
                         </Link>
                     ))}
-                </section>
+                </div>
             </div>
         </div>
     );

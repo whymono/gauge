@@ -10,7 +10,7 @@ export default function CheckoutPage() {
     const { cart } = useCartStore();
     const [isSuccess, setIsSuccess] = useState(false);
 
-    // Calculate Total
+    // --- CALCULATE TOTAL HERE ---
     const total = cart.reduce((acc, item) => {
         const price = parseFloat(item.price.replace("$", ""));
         return acc + price * item.quantity;
@@ -18,7 +18,6 @@ export default function CheckoutPage() {
 
     const handlePayment = (e: React.FormEvent) => {
         e.preventDefault();
-        // Simulate processing
         setIsSuccess(true);
     };
 
@@ -54,7 +53,6 @@ export default function CheckoutPage() {
         <div className="min-h-screen bg-white">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-screen">
 
-                {/* LEFT: Shipping Form */}
                 <div className="p-6 lg:p-24 pt-32 lg:pt-32 order-2 lg:order-1">
                     <Link href="/" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black mb-8">
                         <ArrowLeft className="w-4 h-4" /> Back to cart
@@ -92,7 +90,6 @@ export default function CheckoutPage() {
                     </form>
                 </div>
 
-                {/* RIGHT: Order Summary */}
                 <div className="bg-gray-50 p-6 lg:p-24 pt-32 lg:pt-32 order-1 lg:order-2">
                     <h2 className="text-xl font-medium mb-8">Order Summary</h2>
                     <div className="space-y-6">
@@ -127,7 +124,6 @@ export default function CheckoutPage() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );
