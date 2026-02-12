@@ -28,12 +28,6 @@ export default function Navbar() {
                 <h1 className="text-xl font-bold tracking-tight">Gauge</h1>
             </Link>
 
-            <div className="flex items-center gap-8 hidden md:flex">
-                <Link href="/" className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Shop</Link>
-                <Link href="#" className="text-sm font-medium text-gray-500 hover:text-black transition-colors">About</Link>
-                <Link href="#" className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Support</Link>
-            </div>
-
             <div className="flex items-center gap-4">
                 <button
                     onClick={openCart}
