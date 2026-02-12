@@ -17,7 +17,8 @@ export const products = [
         price: "$189",
         images: [
             "/products/poly60/cover.png",
-            "/products/poly60/detail.png"
+            "/products/poly60/side.png",
+            "/products/poly60/back.png"
         ],
         category: "Keyboards",
         description: "Frosted polycarbonate casing with a soft, dampened typing feel and diffused ambient lighting."
@@ -26,7 +27,11 @@ export const products = [
         id: 3,
         name: "Low Profile 75",
         price: "$149",
-        images: ["/products/lp75/cover.png"],
+        images: [
+            "/products/lp75/cover.png",
+            "/products/lp75/side.png",
+            "/products/lp75/back.png"
+        ],
         category: "Keyboards",
         description: "Ultra-slim mechanical keyboard featuring low-profile switches and a sleek brushed metal finish."
     },
@@ -34,7 +39,11 @@ export const products = [
         id: 4,
         name: "Air Wireless",
         price: "$99",
-        images: ["/products/airmouse/cover.png"],
+        images: [
+            "/products/airmouse/cover.png",
+            "/products/airmouse/side.png",
+            "/products/airmouse/back.png"
+        ],
         category: "Mice",
         description: "An ultralight wireless mouse featuring a high-precision sensor and minimalist aesthetic."
     },
@@ -42,7 +51,11 @@ export const products = [
         id: 5,
         name: "Ergo Lift",
         price: "$119",
-        images: ["/products/ergomouse/cover.png"],
+        images: [
+            "/products/ergomouse/cover.png",
+            "/products/ergomouse/side.png",
+            "/products/ergomouse/back.png"
+        ],
         category: "Mice",
         description: "Vertical ergonomic mouse engineered for long-term comfort and reduced wrist strain during extended sessions."
     },
@@ -50,7 +63,11 @@ export const products = [
         id: 6,
         name: "Nano Click",
         price: "$29",
-        images: ["/products/nanoclick/cover.png"],
+        images: [
+            "/products/nanoclick/cover.png",
+            "/products/nanoclick/side.png",
+            "/products/nanoclick/back.png"
+        ],
         category: "Mice",
         description: "A pocket-sized, low-profile optical mouse designed for portability without sacrificing a clean aesthetic."
     },
@@ -58,7 +75,11 @@ export const products = [
         id: 7,
         name: "Studio Open",
         price: "$349",
-        images: ["/products/headphones/cover.png"],
+        images: [
+            "/products/headphones/cover.png",
+            "/products/headphones/side.png",
+            "/products/headphones/back.png"
+        ],
         category: "Audio",
         description: "Open-back reference headphones designed for critical listening and high-fidelity audio reproduction."
     },
@@ -66,7 +87,11 @@ export const products = [
         id: 8,
         name: "Beam Bar",
         price: "$129",
-        images: ["/products/soundbar/cover.png"],
+        images: [
+            "/products/soundbar/cover.png",
+            "/products/soundbar/side.png",
+            "/products/soundbar/back.png"
+        ],
         category: "Audio",
         description: "Compact under-monitor soundbar with a minimalist profile and clear, directed sound."
     },
@@ -74,7 +99,11 @@ export const products = [
         id: 9,
         name: "Core Buds",
         price: "$149",
-        images: ["/products/earbuds/cover.png"],
+        images: [
+            "/products/earbuds/cover.png",
+            "/products/earbuds/side.png",
+            "/products/earbuds/back.png"
+        ],
         category: "Audio",
         description: "Transparent casing wireless earbuds with active noise cancellation and a clean industrial design."
     },
