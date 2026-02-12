@@ -27,7 +27,7 @@ export default function Botbar() {
 
     return (
         <div className="absolute bottom-0 w-full z-10 translate-y-1/2 flex justify-center px-4">
-            <div className="bg-white p-2 rounded-full flex gap-1 overflow-x-auto shadow-xl border border-gray-100">
+            <div className="bg-white p-2 rounded-full flex gap-1 overflow-x-auto ">
                 {filters.map((item) => {
                     // Button is active if:
                     // 1. It matches the current category in the URL

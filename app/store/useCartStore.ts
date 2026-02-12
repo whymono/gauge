@@ -17,6 +17,7 @@ interface CartState {
     closeCart: () => void;
     addItem: (item: Omit<CartItem, 'quantity'>) => void;
     removeItem: (id: number) => void;
+    clearCart: () => void;
 }
 
 export const useCartStore = create<CartState>()(
@@ -44,6 +45,7 @@ export const useCartStore = create<CartState>()(
             removeItem: (id) => set((state) => ({
                 cart: state.cart.filter((i) => i.id !== id),
             })),
+            clearCart: () => set({ cart: [] }),
         }),
         { name: 'gauge-cart' }
     )
