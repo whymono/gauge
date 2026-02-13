@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: "https://gauge-demo.vercel.app",
         siteName: "Gauge",
         images: [
-            {
+        {
                 url: "/Hero_Img.png",
                 width: 1200,
                 height: 630,
