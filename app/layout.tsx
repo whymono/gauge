@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Gauge | Minimalist Tech Essentials",
         description: "Curated collection of premium, minimalist mechanical keyboards, mice, and audio gear.",
-        url: "https://gauge-demo.vercel.app",
+        url: "https://gauge-beryl.vercel.app",
         siteName: "Gauge",
         images: [
         {
