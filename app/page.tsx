@@ -16,7 +16,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ c
             {/* HERO SECTION - This was likely where the error was */}
             <div className="relative w-full h-[600px]">
                 <Image
-                    src="/Hero_Img.png" // Fixed: This must remain static
+                    src="/Hero_Img.webp" // Fixed: This must remain static
                     alt="Background image"
                     fill
                     className="object-cover"
